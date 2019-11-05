@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    background-color: rgb(14, 14, 14);
+ }
+.container{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin:auto;
+    display: block;
+}
+.nav{
+    display: inline-block;
+    text-decoration-line: none;
+    /* font-family: 'GFS Didot', serif; */
+    font-family: 'VT323', monospace;
+    color: white;
+    letter-spacing: 3px;
+    padding-top: 5px;
+}
+
+.navleft{
+    display: inline-block;
+    padding-top: 15px;
+    margin-left: 20px;
+    
+}
+.navleft span{
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.nav button{
+    padding:0px 15px 5px 15px;
+    background-color: rgb(14, 14, 14);
+    border:none;
+    box-shadow: inset 0px 0px 0px rgb(36, 36, 36);
+transition: all 0.5s !important;
+border-radius: 2px;
+}
+
+.nav button:hover{
+    box-shadow:inset 0px -30px 0px rgb(36, 36, 36);
+}
+
+.navright{
+    text-align: right;
+    width: 100vw;
+    margin-top: -15px;
+    padding-right: 30px;
+}
+
+h1{
+    position: absolute;
+    color: rgb(94, 94, 94);
+    top: 60%;
+    left: 4%;   
+    font-size: 16px;
+    font-family: 'VT323', monospace; 
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 span{
+    letter-spacing: 3px;
+    font-size: 42px;
+    color: rgb(243, 243, 243);
+    font-family: 'Raleway', sans-serif;
+}
+
+h3{
+    position: absolute;
+    color: rgb(94, 94, 94);
+    top: 55%; 
+    font-size: 8px;
+    font-family: 'VT323', monospace; 
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 span{
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: rgb(243, 243, 243);
+    font-family: 'Raleway', sans-serif;
+}
+
+.progress{
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+padding: 2px;
+
+margin-bottom: 150%;
+color: white;
+top:100%;
+left: 50px;
+position: absolute;
+width: 500px;
+height: 12px;
+}
+
+.progress>div{
+    /* background: linear-gradient(to right, #286496 10%, #02A3B1 90%); */
+    background: linear-gradient(to right, #4caabb 10%, rgb(25, 116, 168) 90%);
+    /* background-color: #89aa1a; */
+    animation: stretch70 1s ease-out;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.58, 1);
+    max-width:70%;
+    height: 12px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(125, 228, 211, 0.3);
+}
+
+@keyframes stretch70{
+    0%{
+        width: 5%;
+    }
+    100%{
+        width: 70%
+    }
+}
+
+.percent{
+    color: rgb(94, 94, 94);
+    top: 105%;
+    left: 9%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 10px;
+}
+
+.percent span{
+    color: rgb(243, 243, 243);
+}
